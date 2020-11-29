@@ -1,0 +1,43 @@
+{
+  "name": "@fcg/eslint-config",
+  "version": "0.0.0",
+  "description": "Eslint config settings for frontend repositories (but can be used wherever needed).",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.frontiercargroup.org:eduardo/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "lint",
+    "config",
+    "prettier"
+  ],
+  "author": "Eduardo Grigolo <eduardo.grigolo@oxautos.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "3.7.0",
+    "@typescript-eslint/parser": "3.7.0",
+    "eslint": "7.14.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "prettier": "2.2.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "3.7.0",
+    "@typescript-eslint/parser": "3.7.0",
+    "eslint": "7.14.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "prettier": "2.2.1"
+  }
+}
