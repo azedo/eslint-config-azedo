@@ -41,7 +41,7 @@ module.exports = {
    ```json
     "husky": {
       "hooks": {
-        "pre-push": "echo 'Running pre-push checks...' &&  node utils/helpers/git/checkBranch.js"
+        "pre-push": "npm run lint"
       }
     }
    ```
