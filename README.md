@@ -4,19 +4,21 @@ Opinionated eslint defaults for js/node repositories. If you need to check the d
 
 ## How to use it?
 
-1. Add the config as a `devDependency` package of your repo.
+1. Add the config as a `devDependencies` package of your repo.
 ```bash
 npm i git+http://assets_git:as_rani_ablaze_bad_terrible@git.frontiercargroup.org/tools/eslint-config --save-dev
 ```
 
-1. Install the peerDependencies of this project on your repo (where you will be using this config) using our automated script.
+2. Install the peerDependencies of this project on your repo (where you will be using this config) using our automated script.
 ```bash
+# Run this on your project's main folder (root folder)
 ./node_modules/@fcg/eslint-config/utils/setup.js
+
+# You can also use the node command if you prefer (you don't need to!)
+node node_modules/@fcg/eslint-config/utils/setup.js
 ```
 
-*You need to run this command on your project's root folder (or adjust accordingly if you know what you are doing)!*
-
-3. You need to import this config in your `.eslintrc` to enable them.
+1. You need to import this config in your `.eslintrc` to enable them.
 ```javascript
 module.exports = {
   extends: ['@fcg/eslint-config']
@@ -32,7 +34,7 @@ module.exports = {
 
 5. That's it. Now you should be able to run these rules whenever you want.
 
-6. One suggestion is that you add the scrpt above `lint` in your repo:
+6. One suggestion is that you add the script above `lint` in your repo:
    - As a `pre-push` hook (with husky):
    ```json
     "husky": {
@@ -50,3 +52,13 @@ module.exports = {
    ```
 
 7. One last thing. Feel free to customize these rules in your repository by overwriting them in the `.eslintrc` file or adding more rules that are necessary (or make more sense) for your codebase.
+
+## Known issues
+- If you can't use the automated script (because you already had the package in your repo), delete the `node_modules` folder from your repo and install this config package again!
+```bash
+# On your project's main folder (root folder), type - PLEASE BE CAREFUL WITH THIS RM COMMAND!!!!!
+rm -rf node_modules
+
+# Then, in the same main folder (root folder), install the project's dependencies again (since they should already be in package.json, just run the global npm install command)
+npm i
+```
