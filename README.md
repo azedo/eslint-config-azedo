@@ -4,21 +4,17 @@ Opinionated eslint defaults for js/node repositories. If you need to check the d
 
 ## How to use it?
 
-1. Add the config as a `devDependency` package of your repo in your `package.json` file.
-```json
-{
-   "devDependencies": {
-      "@fcg/eslint-config": "git+http://assets_git:as_rani_ablaze_bad_terrible@git.frontiercargroup.org/eduardo/eslint-config"
-   }
-}
-```
-
-2. Install all the other dependencies for this config project.
+1. Add the config as a `devDependency` package of your repo.
 ```bash
-npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier
+npm i git+http://assets_git:as_rani_ablaze_bad_terrible@git.frontiercargroup.org/tools/eslint-config --save-dev
 ```
 
-*Check the current versions in the package.json file*
+1. Install the peerDependencies of this project on your repo (where you will be using this config) using our automated script.
+```bash
+./node_modules/@fcg/eslint-config/utils/setup.js
+```
+
+*You need to run this command on your project's root folder (or adjust accordingly if you know what you are doing)!*
 
 3. You need to import this config in your `.eslintrc` to enable them.
 ```javascript
