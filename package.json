@@ -4,8 +4,8 @@
   "description": "Eslint config settings for frontend repositories (but could be used wherever needed).",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix"
+    "lint": "eslint '*/**/*.{js,ts,tsx}'",
+    "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --fix"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-sonarjs": "0.5.0",
     "prettier": "2.2.1"
   },
   "devDependencies": {
@@ -38,6 +39,7 @@
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-sonarjs": "0.5.0",
     "prettier": "2.2.1"
   },
   "dependencies": {
