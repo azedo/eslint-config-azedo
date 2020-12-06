@@ -5,6 +5,14 @@
   ],
   "packageRules": [
     {
+      "depTypeList": [
+        "dependencies",
+        "devDependencies",
+        "peerDependencies"
+      ],
+      "rangeStrategy": "pin"
+    },
+    {
       "updateTypes": ["minor", "patch", "pin"],
       "automerge": true,
       "requiredStatusChecks": null
