@@ -1,3 +1,3 @@
-const eslintrc = require('./.eslintrc');
+const defaultConfig = require('./react-config');
 
-module.exports = eslintrc;
+module.exports = defaultConfig
