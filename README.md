@@ -18,7 +18,7 @@ npm i git+http://assets_git:as_rani_ablaze_bad_terrible@git.frontiercargroup.org
 node node_modules/@fcg/eslint-config/utils/setup.js
 ```
 
-1. You need to import this config in your `.eslintrc` to enable them.
+3. You need to import this config in your `.eslintrc` to enable them. *By default the *react configs* are enabled, but you can also use the *node configs* in case you prefer! To do so, just change the bellow extends to `@fcg/eslint-config/node-config`*
 ```javascript
 module.exports = {
   extends: ['@fcg/eslint-config']
