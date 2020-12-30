@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "execa": "5.0.0",
-    "ora": "5.1.0"
+    "ora": "5.2.0"
   },
   "engines": {
     "node": ">=7.0.0"
