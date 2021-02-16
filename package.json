@@ -1,6 +1,6 @@
 {
   "name": "@fcg/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Eslint config settings for frontend repositories (but could be used wherever needed).",
   "main": "index.js",
   "scripts": {
