@@ -1,6 +1,6 @@
 {
   "name": "@fcg/eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Eslint config settings for frontend repositories (but could be used wherever needed).",
   "main": "index.js",
   "scripts": {
@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "execa": "5.0.0",
+    "globby": "11.0.2",
     "ora": "5.3.0"
   },
   "engines": {
