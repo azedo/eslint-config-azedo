@@ -1,7 +1,7 @@
 {
-  "name": "@fcg/eslint-config",
+  "name": "eslint-config-azedo",
   "version": "0.0.3",
-  "description": "Eslint config settings for frontend repositories (but could be used wherever needed).",
+  "description": "Eslint and prettier config settings for frontend repositories (but could be used wherever needed).",
   "main": "index.js",
   "scripts": {
     "lint": "eslint '*/**/*.{js,ts,tsx}'",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.frontiercargroup.org/tools/eslint-config"
+    "url": "https://github.com/azedo/eslint-config-azedo"
   },
   "keywords": [
     "eslint",
@@ -18,7 +18,7 @@
     "config",
     "prettier"
   ],
-  "author": "Eduardo Grigolo <eduardo.grigolo@oxautos.com>",
+  "author": "Eduardo Grigolo <eduardo.grigolo@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "4.21.0",
