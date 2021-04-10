@@ -6,22 +6,22 @@ Opinionated eslint defaults for js/node repositories. If you need to check the d
 
 1. Add the config as a `devDependencies` package of your repo.
 ```bash
-npm i git+http://assets_git:as_rani_ablaze_bad_terrible@git.frontiercargroup.org/tools/eslint-config --save-dev
+npm i --legacy-peer-deps git+https://github.com/azedo/eslint-config-azedo --save-dev
 ```
 
 2. Install the peerDependencies of this project on your repo (where you will be using this config) using our automated script.
 ```bash
 # Run this on your project's main folder (root folder)
-./node_modules/@fcg/eslint-config/utils/setup.js
+./node_modules/eslint-config-azedo/utils/setup.js
 
 # You can also use the node command if you prefer (you don't need to!)
-node node_modules/@fcg/eslint-config/utils/setup.js
+node node_modules/eslint-config-azedo/utils/setup.js
 ```
 
-3. You need to import this config in your `.eslintrc` to enable them. *By default the *react configs* are enabled, but you can also use the *node configs* in case you prefer! To do so, just change the bellow extends to `@fcg/eslint-config/node-config`*
+3. You need to import this config in your `.eslintrc` to enable them. *By default the *react configs* are enabled, but you can also use the *node configs* in case you prefer! To do so, just change the bellow extends to `eslint-config-azedo/node-config`*
 ```javascript
 module.exports = {
-  extends: ['@fcg/eslint-config']
+  extends: ['eslint-config-azedo']
 }
 ```
 
