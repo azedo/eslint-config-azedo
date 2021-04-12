@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-azedo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Eslint and prettier config settings for frontend repositories (but could be used wherever needed).",
   "main": "index.js",
   "scripts": {
