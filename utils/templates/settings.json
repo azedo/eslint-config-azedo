@@ -32,7 +32,8 @@
 
   // Hide node_modules folders
   "files.exclude": {
-    "node_modules": true
+    "node_modules": true,
+    "*/**/node_modules": true
   },
 
   // SVG preview default background
