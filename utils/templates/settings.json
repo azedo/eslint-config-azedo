@@ -1,5 +1,6 @@
 {
   // These are all the auto-save configs for better experience.
+  // Based on wesbos' eslint-config package
 
   // Comment them out, if you don't want them
   "editor.formatOnSave": true,
@@ -14,6 +15,9 @@
   "[typescript]": {
     "editor.formatOnSave": false
   },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
 
   // show eslint icon at bottom toolbar
   "eslint.alwaysShowStatus": true,
@@ -24,7 +28,7 @@
   },
 
   // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
-  "prettier.disableLanguages": ["javascript", "javascriptreact", "typescript"],
+  "prettier.disableLanguages": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
 
   // Hide node_modules folders
   "files.exclude": {

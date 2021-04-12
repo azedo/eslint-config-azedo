@@ -1,15 +1,29 @@
 # Eslint Config
 
-Opinionated eslint defaults for js/node repositories. If you need to check the documentation in order to overwrite some rules in your repository, go to https://eslint.org/docs/rules/ and have a look.
+Opinionated eslint defaults for js/node repositories. If you need to check the documentation in order to overwrite some rules in your repository, go to <https://eslint.org/docs/rules/> and have a look.
 
 ## How to use it?
 
-1. Add the config as a `devDependencies` package of your repo.
+1. If you don't already have a `package.json` file, create one with `npm init`.
+
+2. Then you need to install the packages needed by the config
+
 ```bash
-npm i --legacy-peer-deps git+https://github.com/azedo/eslint-config-azedo --save-dev
+npx install-peerdeps --dev eslint-config-azedo
 ```
 
-2. Install the peerDependencies of this project on your repo (where you will be using this config) using our automated script.
+3. Now, if you have a look at your `package.json` file, you can see that it has a bunch of new packages under `devDependencies`
+
+4. Next you need to import this config in your `.eslintrc` in order to use them. (The `react config` is enabled by default, but in case you want to use the `node config` just change the extends string to `eslint-config-azedo/node-config`)
+
+```javascript
+module.exports = {
+  extends: ['eslint-config-azedo']
+}
+```
+
+5. You can also use our automated script in order to create the `.eslintrs.js`, `.prettierrc.js` and `vscode/settings.json` files (they will not be replaced in case you already have them!)
+
 ```bash
 # Run this on your project's main folder (root folder)
 ./node_modules/eslint-config-azedo/utils/setup.js
@@ -18,24 +32,19 @@ npm i --legacy-peer-deps git+https://github.com/azedo/eslint-config-azedo --save
 node node_modules/eslint-config-azedo/utils/setup.js
 ```
 
-3. You need to import this config in your `.eslintrc` to enable them. *By default the *react configs* are enabled, but you can also use the *node configs* in case you prefer! To do so, just change the bellow extends to `eslint-config-azedo/node-config`*
-```javascript
-module.exports = {
-  extends: ['eslint-config-azedo']
-}
-```
+5. Lastly, don't forget to add a script in your `package.json` file to run these rules against your codebase.
 
-4. Don't forget to add a script in your `package.json` file to run these rules against your codebase.
 ```json
 "scripts": {
-   "lint": "eslint '*/**/*.{js,ts,tsx}' --fix"
+   "lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --fix"
 }
 ```
 
-5. That's it. Now you should be able to run these rules whenever you want.
+6. **And that's it!** Now you should be able to run these rules whenever you want.
 
-6. One suggestion is that you add the script above `lint` in your repo:
+7. One suggestion is that you add the script above `lint` in your repo:
    - As a `pre-push` hook (with husky):
+
    ```json
     "husky": {
       "hooks": {
@@ -43,7 +52,9 @@ module.exports = {
       }
     }
    ```
+
    - And/or as a step in your CI pipelines
+
    ```yaml
    linting:
      stage: codeQuality
@@ -51,10 +62,12 @@ module.exports = {
        - npm run lint
    ```
 
-7. One last thing. Feel free to customize these rules in your repository by overwriting them in the `.eslintrc` file or adding more rules that are necessary (or make more sense) for your codebase.
+8. One last thing. Feel free to customize these rules in your repository by overwriting them in the `.eslintrc` file or adding more rules that are necessary (or make more sense) for your codebase.
 
 ## Known issues
+
 - If you can't use the automated script (because you already had the package in your repo), delete the `node_modules` folder from your repo and install this config package again!
+
 ```bash
 # On your project's main folder (root folder), type - PLEASE BE CAREFUL WITH THIS RM COMMAND!!!!!
 rm -rf node_modules
