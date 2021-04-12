@@ -15,6 +15,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### To Fix
 
+## [0.2.0] - 2021-04-12
+
+### Added
+
+- Create a new `package-lock.json` file (with lockfileVersion 2)
+- Add typescriptreact in the `vscode/settings.json` file
+
+### Changed
+
+- Update repository url in `package.json` file
+- Update `eslint` and `eslint-plugin-react` to their latest versions
+- Update README
+- Update `setup.js` file to look for `.prettierrc*` files
+- Update the `.eslintrc` template file to extend the correct config package name
+
 ## [0.1.0] - 2021-02-16
 
 ### Added
@@ -42,8 +57,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Just an initial commit for the repository.
 
-[unreleased]: https://git.frontiercargroup.org/tools/eslint-config/-/compare/0.1.0...master
-[0.1.0]: https://git.frontiercargroup.org/tools/eslint-config/-/tags/0.1.0
-[0.0.2]: https://git.frontiercargroup.org/tools/eslint-config/-/tags/0.0.2
-[0.0.1]: https://git.frontiercargroup.org/tools/eslint-config/-/tags/0.0.1
-[0.0.0]: https://git.frontiercargroup.org/tools/eslint-config/-/tags/0.0.0
+[unreleased]: https://github.com/azedo/eslint-config-azedo/compare/0.2.0...main
+[0.1.0]: https://github.com/azedo/eslint-config-azedo/releases/tag/0.1.0
+[0.0.2]: https://github.com/azedo/eslint-config-azedo/releases/tag/0.0.2
+[0.0.1]: https://github.com/azedo/eslint-config-azedo/releases/tag/0.0.1
+[0.0.0]: https://github.com/azedo/eslint-config-azedo/releases/tag/0.0.0

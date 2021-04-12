@@ -57,7 +57,7 @@ async function createEslintConfig(spinner) {
 async function createPrettierConfig(spinner) {
   spinner.text = 'Checking for eslint config file'
 
-  const foundFile = await globby(['.prettierrc.*', 'prettier.config.*']);
+  const foundFile = await globby(['.prettierrc*', 'prettier.config.*']);
 
   // Check if file exists
   if (foundFile.length > 0) {

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-azedo",
-  "version": "0.0.3",
+  "version": "0.2.0",
   "description": "Eslint and prettier config settings for frontend repositories (but could be used wherever needed).",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/azedo/eslint-config-azedo"
+    "url": "git@github.com:azedo/eslint-config-azedo.git"
   },
   "keywords": [
     "eslint",
@@ -23,10 +23,10 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "4.21.0",
     "@typescript-eslint/parser": "4.21.0",
-    "eslint": "7.23.0",
+    "eslint": "7.24.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-prettier": "3.3.1",
-    "eslint-plugin-react": "7.23.1",
+    "eslint-plugin-react": "7.23.2",
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-sonarjs": "0.6.0",
     "prettier": "2.2.1"
@@ -34,10 +34,10 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "4.21.0",
     "@typescript-eslint/parser": "4.21.0",
-    "eslint": "7.23.0",
+    "eslint": "7.24.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-prettier": "3.3.1",
-    "eslint-plugin-react": "7.23.1",
+    "eslint-plugin-react": "7.23.2",
     "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-sonarjs": "0.6.0",
     "prettier": "2.2.1"
