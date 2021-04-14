@@ -15,6 +15,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### To Fix
 
+## [0.2.2] - 2021-04-14
+
+### Fixed
+
+- Fix `prettier` extends config for `prettier/@typescript-eslint`. Now it should be only `prettier` as all of these extends config were merge into it.
+
 ## [0.2.1] - 2021-04-12
 
 ### Changed
@@ -63,7 +69,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Just an initial commit for the repository.
 
-[unreleased]: https://github.com/azedo/eslint-config-azedo/compare/v0.2.0...main
+[unreleased]: https://github.com/azedo/eslint-config-azedo/compare/v0.2.2...main
+[0.2.2]: https://github.com/azedo/eslint-config-azedo/releases/tag/v0.2.2
+[0.2.1]: https://github.com/azedo/eslint-config-azedo/releases/tag/v0.2.1
 [0.2.0]: https://github.com/azedo/eslint-config-azedo/releases/tag/v0.2.0
 [0.1.0]: https://github.com/azedo/eslint-config-azedo/releases/tag/v0.1.0
 [0.0.2]: https://github.com/azedo/eslint-config-azedo/releases/tag/v0.0.2
