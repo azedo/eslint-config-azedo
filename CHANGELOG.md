@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fix `prettier` extends config for `prettier/@typescript-eslint`. Now it should be only `prettier` as all of these extends config were merge into it.
+- Fix `prettier` extends config for `prettier/@typescript-eslint`. Now it should be only `prettier` as all of these extends config were merge into it. https://github.com/prettier/eslint-config-prettier/blob/main/CHANGELOG.md#version-800-2021-02-21
 
 ## [0.2.1] - 2021-04-12
 
